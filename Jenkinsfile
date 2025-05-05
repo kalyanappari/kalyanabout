@@ -24,7 +24,7 @@ pipeline{
         stage('Deploy to hub'){
             steps{
                 script{
-                    docker.withRegistry('https://index.docker.io/v1/','DOCKERHUB'){
+                    docker.withRegistry('https://index.docker.io/v1/','DockerHUB'){
                        docker_image.push();
                     }
                 }
