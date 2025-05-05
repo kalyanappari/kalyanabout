@@ -1,11 +1,8 @@
 pipeline{
-
     agent any
-
     environment{
         image = 'kalyan3003/about'
     }
-
     stages{
         stage('Clone repo'){
             steps{
